@@ -6,17 +6,35 @@
 }
 
 .calcContainer {
-  background-color: blue;
+  background-color: lightgray;
   margin: 50px auto;
   height: 400px;
   width: 300px;
   display: flex;
   flex-direction: column;
+  padding: 2px;
+  border-radius: 5%;
 }
 
 .output {
-  background-color: lightblue;
+  background-color: lightgoldenrodyellow;
   width: 100%;
-  height: 25px;
+  height: 200px;
+  margin-top: px;
+  border-radius: 5%;
+}
+
+.button-holder {
   margin-top: 10px;
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2px;
+}
+
+button {
+  width: 65px;
+  height: 55px;
+  border-radius: 20%;
 }
