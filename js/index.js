@@ -38,3 +38,20 @@ function operate(userNum1, userNum2, operator) {
     return dividingNum(userNum1, userNum2);
   }
 }
+//here we are getting all button and adding the button press function when
+// any button is pressed
+document.querySelectorAll("button").forEach((button) => {
+  button.addEventListener("click", buttonPressed);
+});
+//function grabs the inner text of the button pressed
+function buttonPressed(e) {
+  const buttonPress = e.target;
+  value = buttonPress.innerText;
+  console.log(value);
+}
+//still need to figure out how to just get the value added to the display
+let span = document.createElement("span");
+let output = document.querySelector(".output");
+span.textContent = buttonPressed();
+
+output.appendChild(span);
