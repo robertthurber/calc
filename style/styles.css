@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+/* the container that will hold the whole calculator  */
 .calcContainer {
   background-color: lightgray;
   margin: 50px auto;
@@ -16,14 +17,25 @@
   border-radius: 5%;
 }
 
+/* the output / display container  */
 .output {
   background-color: lightgoldenrodyellow;
+  display: flex;
   width: 100%;
   height: 200px;
   margin-top: px;
   border-radius: 5%;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
+span {
+  align-self: flex-end;
+  padding: 10px;
+  font-size: 20px;
+}
+
+/* calc button container */
 .button-holder {
   margin-top: 10px;
   margin-bottom: 0;
