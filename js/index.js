@@ -45,13 +45,11 @@ document.querySelectorAll("button").forEach((button) => {
 });
 //function grabs the inner text of the button pressed
 function buttonPressed(e) {
-  const buttonPress = e.target;
+  let buttonPress = e.target;
   value = buttonPress.innerText;
-  console.log(value);
+  let span = document.createElement("span");
+  let output = document.querySelector(".output");
+  span.textContent = value;
+  output.appendChild(span);
 }
-//still need to figure out how to just get the value added to the display
-let span = document.createElement("span");
-let output = document.querySelector(".output");
-span.textContent = buttonPressed();
-
-output.appendChild(span);
+//still need to figure out how to just get the value of the button pressed function out
